@@ -1,12 +1,17 @@
-export { Application, Router } from 'oak/mod.ts';
+export { Application, Router } from 'oak';
 export {
   App,
   Area,
   Controller,
   Get,
+  Delete,
   Post,
+  Patch,
   Body,
   Param,
   QueryParam,
+  Injectable,
 } from 'alosaur';
-export { load } from 'https://deno.land/std@0.224.0/dotenv/mod.ts';
+export { load } from 'dotenv';
+export { connect } from 'redis';
+export type { Redis } from 'redis';

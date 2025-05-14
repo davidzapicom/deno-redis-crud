@@ -1,9 +1,3 @@
-import { Area } from '../deps.ts';
-import { UserController } from './modules/users/infra/ctrls/user.ctrl.ts';
+import { UserModule } from './modules/users/users.module.ts';
 
-@Area({
-  // baseRoute: '/api',
-  controllers: [UserController],
-  providers: [],
-})
-export class AppModule {}
+export const AppModule = [UserModule];

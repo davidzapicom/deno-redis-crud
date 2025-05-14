@@ -4,8 +4,11 @@
     "emitDecoratorMetadata": true
   },
   "imports": {
-    "oak/": "https://deno.land/x/oak@v12.6.1/",
-    "alosaur": "https://deno.land/x/alosaur@v0.38.0/mod.ts"
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "alosaur": "https://deno.land/x/alosaur@v0.38.0/mod.ts",
+    "redis": "https://deno.land/x/redis@v0.29.4/mod.ts",
+    "dotenv": "https://deno.land/std@0.224.0/dotenv/mod.ts",
+    "openapi": "https://deno.land/x/openapi@v1.0.0/mod.ts"
   },
   "tasks": {
     "start": "deno run --allow-net --allow-env --allow-read ./src/main.ts",

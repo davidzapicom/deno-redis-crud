@@ -1,2 +1,4 @@
-app
+/app
 .env
+deno.lock
+.DS_Store
