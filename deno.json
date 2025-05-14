@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "imports": {
+    "oak/": "https://deno.land/x/oak@v12.6.1/",
+    "alosaur": "https://deno.land/x/alosaur@v0.38.0/mod.ts"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read ./src/main.ts",
+    "compile": "deno compile --allow-net --allow-env --allow-read --output app ./src/main.ts",
+    "run": "./app",
+    "test": "deno test --allow-net",
+    "cache": "deno cache",
+    "lint": "deno lint",
+    "fmt": "deno fmt"
+  }
+}
